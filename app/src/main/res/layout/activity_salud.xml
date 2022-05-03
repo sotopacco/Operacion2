@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Salud">
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="@string/ingrese_nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:hint="@string/ingrese_peso"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtAltura"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/ingrese_altura"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534">
+
+        <RadioButton
+            android:id="@+id/rMujer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="147dp"
+            android:text="@string/mujer" />
+
+        <RadioButton
+            android:id="@+id/rVaron"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="209dp"
+            android:text="@string/hombre"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpiar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRecomendacion"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Recomendacion"
+        android:text="@string/recomendaciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:hint="@string/su_genero_es"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:hint="@string/calculo_es"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

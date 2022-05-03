@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Operacion2</string>
+    <string name="ingrese_nombre">Ingrese Nombre</string>
+    <string name="ingrese_peso">Ingrese Peso</string>
+    <string name="ingrese_altura">Ingrese Altura</string>
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="su_genero_es">Su genero es:</string>
+    <string name="calculo_es">Calculo es:</string>
+    <string name="recomendaciones">Recomendaciones</string>
+</resources>

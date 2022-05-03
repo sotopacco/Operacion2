@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    tools:context=".Operaciones">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/numero1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="numero 1"
+
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/numero2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="numero 2"
+
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:backgroundTint="#323231"
+                android:text="+"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <Button
+                android:id="@+id/btnresta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="-"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <Button
+                android:id="@+id/btnproducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                app:cornerRadius="20dp"
+                android:text="*"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btndiv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="/"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCoseno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="cos"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnrTangente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="tan"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnLn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                app:cornerRadius="20dp"
+                android:text="ln"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnLg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="lg"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="sin"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnSecante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="sec"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnPotencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                app:cornerRadius="20dp"
+                android:text="x^y"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnRaiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="√"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+            <Button
+                android:id="@+id/btnlimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:text="limpiar"
+                android:background="@drawable/ic_launcher_foreground"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="italic"
+                android:textSize="40dp"
+                android:backgroundTint="#323231"
+                android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="el resultado es: "
+                android:inputType="none"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <TextView
+                android:id="@+id/resultado1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="el resultado es: "
+                android:inputType="none"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
